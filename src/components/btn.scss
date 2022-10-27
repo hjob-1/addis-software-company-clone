@@ -1,0 +1,25 @@
+.btn {
+    display: inline-block;
+    border: 1px solid #24CEC8;
+    border-radius: 30px;
+   
+}
+
+.btn p {
+    padding: 10px 50px;
+    font-size: 14px;
+}
+@media (min-width:850px) {
+    .btn {
+        &:hover{
+        background:#24CEC8;
+        transition: all ease-in-out 0.5s;
+        p{
+            &:hover{
+                color:white;
+                transition: all ease-in-out 0.5s;
+            }
+        }
+        }
+    }
+}

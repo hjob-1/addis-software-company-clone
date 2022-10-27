@@ -1,0 +1,180 @@
+//mobile
+
+.hero-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .hero-title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .hero-title {
+            font-size: 58px;
+            color: #575A5C;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+            .t-color {
+                color: #2174C9;
+                font-family: 'Permanent Marker',
+                        'cursive';
+                }
+            
+            .h-color {
+                color: #FA8937;
+                font-family: 'Permanent Marker',
+                        'cursive';
+                }
+            
+            .e-color {
+                color: #24CEC8;
+                font-family: 'Permanent Marker',
+                        'cursive';
+                }
+        }
+        .hero-auto-subtitle {
+            margin-bottom: 0px;
+            margin-top: 40px;
+            font-family: 'Poppins',
+                        sans-serif;
+            font-size: 18px;
+           
+            .IN_asBlock{
+                display: block;
+                text-align: center;
+            }
+             
+        }
+    }
+    .hero-bar-container.mobile-hidden{
+        display: none; 
+    }
+    .btn-mobile{
+       background: #2174C9;
+       color: white;
+       font-size: 18px;
+       padding:20px 35px;
+       font-weight: 500;
+       display: flex;
+       text-transform: uppercase;
+       align-items: center;
+       justify-content: center;
+       font-family: 'Poppins', 'sans-serif';
+       border-radius: 50px;
+       margin-top: 30px;
+       p{
+        color:white;
+       }
+    }
+}
+
+
+
+
+//desktop css
+@media screen and (min-width:950px) {
+.hero-container{
+    justify-content: unset;
+    padding:0px 80px;
+    flex-direction: row;
+    margin-bottom: 200px;
+    .hero-title-container{
+        align-items: unset;
+        justify-content: unset;
+        .hero-title {
+                font-size: 100px;
+                text-align: left;
+                margin:0px;
+                line-height: 120px;
+            }
+        .hero-auto-subtitle{
+                font-size: 37px;
+                margin: 0px 0px 0px 40px;
+                .IN_asBlock{
+                    display: inline;
+                    text-align: left;
+                    margin-right: 10px;
+                   }
+            
+        }  
+        
+    }
+    .hero-bar-container.mobile-hidden {
+            display: flex;
+            justify-content: space-between;
+            margin-left:10px;
+            margin-top:100px;
+            .hero-btn {
+                    background: #2174C9;
+                    color: white !important;
+                    width: 90px;
+                    font-size: 23px;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Poppins', 'sans-serif';
+                    border-radius: 100px;
+                    transform-origin: bottom;
+
+                    p{
+                        writing-mode: vertical-rl;
+                        
+                    }
+                }
+            .bar-one {
+                display: flex;
+                width:92px;
+                margin-left:20px;
+                flex-direction: column;
+                justify-content: space-between;
+                .round {
+                    height:170px;
+                    width:100%;
+                    background: #C6D711;
+                    border-radius: 100px;
+                }
+                .circle {
+                    height:92px;
+                    width: 100%;
+                    background:#FA8937;
+                    margin:30px 0px;
+                    border-radius: 100%;
+                }
+            }
+            .bar-two{
+                width:90px;
+                background:#24CEC8;
+                border-radius: 100px;
+                margin-left: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding:20px;
+                .circle{
+                    background:white;
+                    border-radius: 100%;
+                }
+                .medium{
+                    width:20px;
+                    height:20px;
+                }
+                .small{
+                    width:12px;
+                    height:12px;
+                    margin-top: 35px;
+                    align-self: flex-end;
+
+                }
+            }
+    }
+    .btn-mobile{
+        display:none;
+    }
+}
+}

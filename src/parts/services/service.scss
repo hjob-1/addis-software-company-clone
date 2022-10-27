@@ -1,0 +1,16 @@
+.service-container, .values-container{
+    background:#F5F5F5;
+    .o-color{
+        color:#24CEC8;
+    }
+    // service btn and value btn
+    .service-btn, .value-btn{
+        margin: 90px 0px 30px 0px;
+        text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
+}
+

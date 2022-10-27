@@ -1,0 +1,64 @@
+.career-container{
+    padding:0px 20px; 
+    margin-top: 80px;
+    .career-header{
+        text-align: center;
+        
+        h1{
+          margin-bottom: 20px;
+          font-weight: 300;
+          }
+    }
+    .career-description{
+        margin-bottom: 40px;
+        em{
+            font-size: 12px;
+        }
+        p{
+            font-size: 30px;
+            font-weight: 600;
+            color:#C7D710;
+            margin:80px 0px;
+            text-align: center;
+        }
+    }
+    .contactus-btn{
+        text-align: center;
+    }
+    .career-image{
+        display: none;
+    }
+}
+@media (min-width:800px){
+    .career-container {
+        display: flex;
+        padding:0px 40px;
+        article{
+            width:800px;
+        }
+        .career-header {
+            text-align: left;
+        h1 {
+           font-size: 60px;
+            }
+        }
+        .career-description{
+            em {
+            font-size: 12px;
+                }
+            p {
+            font-size: 40px;
+            
+            }
+        }
+        .career-image {
+            display: block;
+           
+
+            img{
+                width:100%;
+            }
+        }
+    }
+    
+}

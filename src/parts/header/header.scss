@@ -1,0 +1,88 @@
+.header-container{
+    height:120px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 20px;
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    left:0;
+    z-index: 10000;
+    background:white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .mobile-hidden{
+        position:absolute;
+        top:120px;
+        left:0px;
+        background: white;
+        width:100vw;
+        height:calc(100vh - 120px);
+        display:flex;
+        display:none;
+        justify-content: center;
+        z-index:1000;
+        
+        .nav-link-lists {
+                list-style-type: none;
+                margin:20px 0px;
+               
+                text-align: center;
+                .link{
+                    padding:28px 0px;
+                }
+            }
+    }
+    .mobile-hidden.active{
+        display: block;
+    }
+    .hamburger-menu{
+        font-size: 25px;
+    }
+    
+}
+
+@media  (min-width:880px) {
+    .header-container{
+       padding:0px 90px;
+        .mobile-hidden {
+            position: unset;
+            background: transparent;
+            width: 100vw;
+            height: unset;
+            display: flex; 
+            z-index: 1000;
+            margin-left: 30px;
+            .nav-link-lists {
+                    margin: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-align: unset;
+                    width: 100%;
+                    margin-left: 100px;
+                    .link {
+                        padding: 0px;
+                        font-size: 14px;
+                    }
+                    .contact-btn{
+                        
+                        border-radius: 20px;
+                       
+                        padding:10px 20px;
+                        border:1px solid #24CEC8;
+                        margin-left: 30px;
+                        &:hover{
+                            background-color: #24CEC8;
+                            color:white;
+                            transition: all ease-in-out 0.5s;   
+                        }
+                    }
+                }
+            }
+    }
+
+    .hamburger-container{
+        display: none;
+    }
+}

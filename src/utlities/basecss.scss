@@ -1,0 +1,117 @@
+
+.baselayout {
+    padding: 40px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    .base-title {
+        font-size: 23px;
+        letter-spacing: 2px;
+
+        .o-color {
+            font-size: 54px;
+            vertical-align: middle;
+        }
+    }
+
+    .base-description {
+        margin: 20px 0px;
+
+        p {
+            font-size: 12px;
+        }
+    }
+    
+}
+.commonlayout{
+
+.cards-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        margin: 40px 0px;
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 12px;
+            text-align: center;
+
+            .card-title {
+                margin-bottom: 20px;
+
+                h3 {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+
+            .card-image {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                background: white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                svg {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+            .card-description p {
+                font-size: 12px;
+            }
+        }
+
+    }
+
+}
+
+@media (min-width:950px){
+    .baselayout {
+        padding: 60px 50px 20px; 
+        .base-title {
+            font-size: 45px;
+            h1{
+            font-weight: 300;
+            }
+            .o-color {
+                font-size: 90px;
+                vertical-align: -6px;
+            }
+        }
+        .cards-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        .card{
+        .card-title {
+        h3 {
+             font-size: 18px;
+            }
+        }
+        .card-image.card {
+            width:160px;
+            height:160px;
+            transition: all ease-in-out 0.5s;
+            &:hover{
+                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                transform: scale(1.1);
+                
+            }
+        }
+
+         .card-description p {
+            font-size: 12px;
+        }
+
+    }
+
+    }
+}
+}
+
